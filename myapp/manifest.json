@@ -1,6 +1,6 @@
 {
     "name": "Facebook - Don't Hack My Status",
-    "version": "1.0",
+    "version": "1.1",
     "manifest_version": 2,
 
     "description": "Hides the Post status button to stop people from hacking your status!",

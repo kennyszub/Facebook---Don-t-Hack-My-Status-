@@ -27,13 +27,13 @@ chrome.pageAction.onClicked.addListener(function(tab) {
     if (tabIds.contains(tab.id)) {
         // hide Post button
         chrome.tabs.insertCSS(null, 
-                         {code:".uiButtonConfirm {visibility:hidden !important;}"});
+                         {code:"button._11b {visibility:hidden !important;}"});
         var index = tabIds.indexOf(tab.id);
         tabIds.splice(index, 1);
     } else {
         // show Post button
         chrome.tabs.insertCSS(null, 
-                         {code:".uiButtonConfirm {visibility:visible !important;}"});
+                         {code:"button._11b {visibility:visible !important;}"});
         tabIds.push(tab.id);
     }
 }
